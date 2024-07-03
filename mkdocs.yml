@@ -1,0 +1,91 @@
+site_name: Flowx Documentation
+nav:
+  - Home: index.md
+  - API:
+    - flowx.agents: api/flowx/agents.md
+    - flowx.agents.agent: api/flowx/agents/agent.md
+    - flowx.callbacks: api/flowx/callbacks.md
+    - flowx.callbacks.callback_handler: api/flowx/callbacks/callback_handler.md
+    - flowx.callbacks.callback_manager: api/flowx/callbacks/callback_manager.md
+    - flowx.callbacks.chat_history: api/flowx/callbacks/chat_history.md
+    - flowx.callbacks.console_callback: api/flowx/callbacks/console_callback.md
+    - flowx.callbacks.listeners_callback: api/flowx/callbacks/listeners_callback.md
+    - flowx.callbacks.run: api/flowx/callbacks/run.md
+    - flowx.callbacks.run_cache: api/flowx/callbacks/run_cache.md
+    - flowx.callbacks.run_stack: api/flowx/callbacks/run_stack.md
+    - flowx.callbacks.trace: api/flowx/callbacks/trace.md
+    - flowx.cmdline: api/flowx/cmdline.md
+    - flowx.config: api/flowx/config.md
+    - flowx.context: api/flowx/context.md
+    - flowx.exceptions: api/flowx/exceptions.md
+    - flowx.flow: api/flowx/flow.md
+    - flowx.flow.addable_dict: api/flowx/flow/addable_dict.md
+    - flowx.flow.config: api/flowx/flow/config.md
+    - flowx.flow.flow: api/flowx/flow/flow.md
+    - flowx.flow.utils: api/flowx/flow/utils.md
+    - flowx.llm: api/flowx/llm.md
+    - flowx.llm.llm: api/flowx/llm/llm.md
+    - flowx.llm.llm_with_history: api/flowx/llm/llm_with_history.md
+    - flowx.llm.openai: api/flowx/llm/openai.md
+    - flowx.llm.openai.openai_llm: api/flowx/llm/openai/openai_llm.md
+    - flowx.llm.openai.utils: api/flowx/llm/openai/utils.md
+    - flowx.log: api/flowx/log.md
+    - flowx.logging: api/flowx/logging.md
+    - flowx.messages: api/flowx/messages.md
+    - flowx.messages.chat_message: api/flowx/messages/chat_message.md
+    - flowx.messages.utils: api/flowx/messages/utils.md
+    - flowx.prompts: api/flowx/prompts.md
+    - flowx.prompts.message_list_template: api/flowx/prompts/message_list_template.md
+    - flowx.prompts.message_template: api/flowx/prompts/message_template.md
+    - flowx.tool: api/flowx/tool.md
+    - flowx.utils: api/flowx/utils.md
+    - flowx.utils.iter: api/flowx/utils/iter.md
+    - flowx.utils.utils: api/flowx/utils/utils.md
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.footer
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  palette:
+    - media: (prefers-color-scheme)
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - accent: purple
+      media: "(prefers-color-scheme: light)"
+      primary: white
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - accent: purple
+      media: "(prefers-color-scheme: dark)"
+      primary: black
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  logo: 'https://img.icons8.com/ios-filled/50/000000/rocket.png'
+  favicon: 'https://img.icons8.com/ios-filled/50/000000/rocket.png'
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nmhjklnm
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/nmhjklnm
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            allow_inspection: true
+            show_source: true
+  - autorefs

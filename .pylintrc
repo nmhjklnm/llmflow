@@ -1,0 +1,13 @@
+[MESSAGES CONTROL]
+disable=missing-module-docstring,
+        missing-class-docstring,
+        missing-function-docstring,
+        no-name-in-module,
+        import-error,
+        unused-argument,
+        too-many-arguments,
+        unused-variable,
+        too-few-public-methods,
+        invalid-name,
+        import-outside-toplevel,
+        cyclic-import

@@ -1,0 +1,1 @@
+::: flowx.messages.chat_message

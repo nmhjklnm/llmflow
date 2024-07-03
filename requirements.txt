@@ -1,0 +1,13 @@
+pydantic>=2.7.0
+pypdf
+docx2txt
+tiktoken
+nltk
+numpy>=1.21,<2.0
+openai
+transformers
+sentencepiece
+protobuf
+chromadb
+unstructured
+tenacity
